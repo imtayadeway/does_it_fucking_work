@@ -2,7 +2,7 @@ module DoesItFuckingWork
   class Session
     attr_reader :timeout, :strategy
 
-    def initialize(timeout:, strategy:)
+    def initialize(timeout: 15, strategy:)
       @timeout = timeout
       @strategy = strategy
       @done = false
