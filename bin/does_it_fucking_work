@@ -3,4 +3,4 @@
 require "bundler/setup"
 require "does_it_fucking_work"
 
-DoesItFuckingWork.go("https://google.com")
+DoesItFuckingWork.go(ARGV[0])
