@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "does_it_fucking_work"
+
+DoesItFuckingWork.go("https://google.com")
