@@ -14,7 +14,7 @@ module DoesItFuckingWork
     end
 
     def tick
-      client.status_code >= 500 and raise ItDoesntFuckingWorkError
+      client.status_code >= 400 and raise ItDoesntFuckingWorkError
       sleep(rand(999) / 500.0)
       *clickables = *client.all(:link), *client.all(:button)
       begin
